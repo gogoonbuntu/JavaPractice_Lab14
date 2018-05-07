@@ -6,5 +6,5 @@ public class Main {
 		In_exception abc = new In_exception();
 		abc.divider();
 	}
-
+	
 }
