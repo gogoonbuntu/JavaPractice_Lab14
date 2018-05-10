@@ -6,13 +6,13 @@ public class Main {
 
 	public static void main(String[] args) 
 	{
-		int speed = (int)(Math.random()*100);
+		int speed = (int)(Math.random()*100); //randomly make speed.
 		System.out.print("Set the speed limit, officer: ");
 		Scanner sc = new Scanner(System.in);
-		int limit = sc.nextInt();
-		SpeedLimit sl =  new SpeedLimit(speed, limit);
-		sl.warnSpeedLimit();
-		System.out.println("Your current speed: "+speed);
+		int limit = sc.nextInt(); //receive int for limit
+		SpeedLimit sl =  new SpeedLimit(speed, limit); //create SpeedLimit with limit created.
+		sl.warnSpeedLimit(); //run warnSpeedLimit method.
+		System.out.println("Your current speed: "+speed); //show the current speed
 	}
 
 }
