@@ -10,21 +10,21 @@ public class In_exception {
 		{
 			System.out.print("x: ");
 			Scanner sc = new Scanner(System.in);
-			x=sc.nextInt();
-			System.out.println();
+			x=sc.nextInt(); //receive int for x.
 			System.out.print("y: ");
-			y=sc.nextInt();
-			System.out.println();
-			int res = x/y;
-			System.out.println(res);
+			y=sc.nextInt(); //receive int for y.
+			int res = x/y; //does division!
+			System.out.println(res); //print out the result
 		}
 		catch(InputMismatchException e)
 		{
-			System.out.println("java.util.InputMismatchException");
+			System.out.println(e);
+			//print out its error message when x or y is not integer.
 		}
 		catch(ArithmeticException e)
 		{
 			System.out.println("java.lang.ArithmeticException: "+ e.getMessage());
+			//print out its error message when divider is 0.
 		}
 	}
 }
